@@ -1,3 +1,3 @@
-FROM node:18
+FROM node:19
 
-RUN npm i -g turbo
+RUN npm i -g turbo pnpm
