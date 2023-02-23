@@ -1,3 +1,5 @@
-FROM node:19
+FROM node:18-alpine AS builder
 
-RUN npm i -g turbo pnpm
+RUN apk add --no-cache libc6-compat
+RUN npm i -g pnpm turbo
+
